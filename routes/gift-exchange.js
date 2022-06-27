@@ -20,13 +20,13 @@ router.post("/pairs", async (req, res, next) => {
 
 router.post("/traditional", async (req, res, next) => {
   try {
-    const newGift = req.body.names;
+    const tmpGift = req.body.names;
 
-    if (!newGift || newGift.length < 2) {
+    if (!tmpGift || tmpGift.length < 2) {
       return next(new BadRequestError("Invalid input"));
     }
 
-    const gift = await GiftExchange.traditional(newGift);
+    const gift = await GiftExchange.traditional(tmpGift);
     res.status(200).json(gift);
   } catch (err) {
     next(err);
