@@ -18,13 +18,24 @@
   },
   "devDependencies": {
     "jest": "^28.0.3",
-    "supertest": "^6.2.3",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
   },
   "jest": {
     "testEnvironment": "node",
     "testMatch": [
       "**/*.test.js"
     ]
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michelle011/tdd-gift-giver-student.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michelle011/tdd-gift-giver-student/issues"
+  },
+  "homepage": "https://github.com/michelle011/tdd-gift-giver-student#readme"
 }
