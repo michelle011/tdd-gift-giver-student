@@ -6,6 +6,7 @@ const { BadRequestError } = require("../utils/errors");
 const router = express.Router();
 
 router.post("/pairs", async (req, res, next) => {
+  // res.status(200).json({names : []})
   try {
     const tmpGift = req.body.names;
     if (!tmpGift || tmpGift.length < 2) {
